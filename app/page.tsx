@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import{
+import {
   BarChart3,
   Bell,
   Bug,
@@ -47,6 +47,7 @@ import ExpensesPage from "@/components/expenses/ExpensesPage";
 import LeadsPage from "@/components/leads/LeadsPage";
 import EmployeesPage from "@/components/employees/EmployeesPage";
 import CustomersPage from "@/components/Customers/CustomersPage";
+import Image from "next/image";
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -92,8 +93,15 @@ export default function Dashboard() {
       >
         <div className="flex h-14 items-center border-b px-4">
           <Link href="#" className="flex items-center gap-2 font-semibold">
-            <Bug className="h-5 w-5 text-emerald-600" />
-            <span>NIPRALO</span>
+            {/* <Bug className="h-5 w-5 text-emerald-600" />
+            <span>NIPRALO</span> */}
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="hidden h-6 w-[160px] rounded-md md:block"
+            />
           </Link>
           <Button
             variant="ghost"
