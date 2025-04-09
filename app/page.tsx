@@ -68,12 +68,12 @@ export default function Dashboard() {
         return <BillingPage />;
       case "expenses":
         return <ExpensesPage />;
-      case "reports":
-        return <ReportsPage />;
+      // case "reports":
+      //   return <ReportsPage />;
       case "deleted-records":
         return <DeletedRecordsPage />;
-      case "settings":
-        return <SettingsPage />;
+      // case "settings":
+      //   return <SettingsPage />;
       case "quotations":
         return <QuotationsPage />;
       case "invoices":
@@ -91,7 +91,7 @@ export default function Dashboard() {
           sidebarOpen ? "left-0" : "-left-64"
         } md:left-0 md:w-64`}
       >
-        <div className="flex h-14 items-center border-b px-4">
+        <div className="flex h-14 items-center border-b px-4 ">
           <Link href="#" className="flex items-center gap-2 font-semibold">
             {/* <Bug className="h-5 w-5 text-emerald-600" />
             <span>NIPRALO</span> */}
@@ -113,7 +113,7 @@ export default function Dashboard() {
             <span className="sr-only">Close sidebar</span>
           </Button>
         </div>
-        <nav className="flex-1 overflow-auto py-2">
+        <nav className="flex-1 overflow-auto py-2 ">
           <div className="px-3 py-2">
             {/* <h2 className="mb-2 px-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Main
@@ -272,7 +272,7 @@ export default function Dashboard() {
           <div className="flex items-center gap-3">
             <Avatar>
               <AvatarImage src="/placeholder-user.jpg" alt="User" />
-              <AvatarFallback>JD</AvatarFallback>
+              <AvatarFallback>SK</AvatarFallback>
             </Avatar>
             <div className="flex flex-col">
               <span className="text-sm font-medium">Shahbaz Khan</span>

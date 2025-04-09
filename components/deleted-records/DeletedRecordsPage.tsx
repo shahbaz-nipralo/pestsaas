@@ -97,7 +97,7 @@ export default function DeletedRecordsPage() {
           <Button
             variant="default"
             onClick={() => setIsRestoreDialogOpen(true)}
-            disabled={selectedRecords.length === 0}
+            disabled={selectedRecords.length === 0} className="bg-emerald-600 hover:bg-emerald-700"
           >
             <Undo className="mr-2 h-4 w-4" />
             Restore Selected
