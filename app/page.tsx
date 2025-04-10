@@ -68,12 +68,12 @@ export default function Dashboard() {
         return <BillingPage />;
       case "expenses":
         return <ExpensesPage />;
-      // case "reports":
-      //   return <ReportsPage />;
+      case "reports":
+        return <ReportsPage />;
       case "deleted-records":
         return <DeletedRecordsPage />;
-      // case "settings":
-      //   return <SettingsPage />;
+      case "settings":
+        return <SettingsPage />;
       case "quotations":
         return <QuotationsPage />;
       case "invoices":
