@@ -27,6 +27,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
+import Link from "next/link";
 
 export default function CustomersPage() {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -90,8 +91,9 @@ export default function CustomersPage() {
           <Button variant="outline">
             <Download className="mr-2 h-4 w-4" /> Export
           </Button>
-          <Dialog open={isNewCustomerOpen} onOpenChange={setIsNewCustomerOpen}>
+          {/* <Dialog open={isNewCustomerOpen} onOpenChange={setIsNewCustomerOpen}>
             <DialogTrigger asChild>
+              
               <Button className="bg-emerald-600 hover:bg-emerald-700">
                 <Plus className="mr-2 h-4 w-4" /> Add Customer
               </Button>
@@ -178,7 +180,11 @@ export default function CustomersPage() {
                 </Button>
               </DialogFooter>
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
+           <Link href="/new-client" passHref>
+              <Button className="bg-emerald-600 hover:bg-emerald-700">
+                <Plus className="mr-2 h-4 w-4" /> Add Customer
+              </Button></Link>
         </div>
       </div>
 
