@@ -1,15 +1,29 @@
-"use client"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle,DialogTrigger } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Textarea } from "@/components/ui/textarea"
-import { Plus } from "lucide-react"
+"use client";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import { Plus } from "lucide-react";
 
 export default function AddLeadDialog() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
@@ -22,7 +36,9 @@ export default function AddLeadDialog() {
       <DialogContent className="sm:max-w-[525px]">
         <DialogHeader>
           <DialogTitle>Add New Lead</DialogTitle>
-          <DialogDescription>Enter the details of the potential customer.</DialogDescription>
+          <DialogDescription>
+            Enter the details of the potential customer.
+          </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-2 gap-4">
@@ -61,7 +77,7 @@ export default function AddLeadDialog() {
                 </SelectContent>
               </Select>
             </div>
-            <div className="col-span-2 sm:col-span-1">
+            {/* <div className="col-span-2 sm:col-span-1">
               <Label htmlFor="assigned">Assign To</Label>
               <Select>
                 <SelectTrigger id="assigned">
@@ -72,12 +88,15 @@ export default function AddLeadDialog() {
                   <SelectItem value="jane">Jane Smith</SelectItem>
                 </SelectContent>
               </Select>
-            </div>
+            </div> */}
           </div>
           <div className="grid grid-cols-1 gap-4">
             <div className="col-span-1">
               <Label htmlFor="notes">Notes</Label>
-              <Textarea id="notes" placeholder="Enter any additional information about this lead" />
+              <Textarea
+                id="notes"
+                placeholder="Enter any additional information about this lead"
+              />
             </div>
           </div>
         </div>
@@ -86,5 +105,5 @@ export default function AddLeadDialog() {
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

@@ -139,7 +139,7 @@ export default function Dashboard() {
                 }`}
               >
                 <Users className="h-4 w-4" />
-                Client
+                Customers
               </button>
               <button
                 onClick={() => setActiveTab("employees")}

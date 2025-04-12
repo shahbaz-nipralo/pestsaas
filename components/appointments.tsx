@@ -481,16 +481,16 @@ export default function AppointmentsPage() {
                                         <h3 className="font-semibold text-sm text-muted-foreground">Customer</h3>
                                         <p>{selectedAppointment.customer}</p>
                                       </div>
-                                      <div>
+                                      {/* <div>
                                         <h3 className="font-semibold text-sm text-muted-foreground">Service Type</h3>
                                         <p>{selectedAppointment.type}</p>
-                                      </div>
+                                      </div> */}
                                     </div>
                                     <div className="grid grid-cols-2 gap-4">
-                                      <div>
+                                      {/* <div>
                                         <h3 className="font-semibold text-sm text-muted-foreground">Date & Time</h3>
                                         <p>{formatAppointmentDate(selectedAppointment.date)}</p>
-                                      </div>
+                                      </div> */}
                                       <div>
                                         <h3 className="font-semibold text-sm text-muted-foreground">Technician</h3>
                                         <p>{selectedAppointment.technician}</p>
